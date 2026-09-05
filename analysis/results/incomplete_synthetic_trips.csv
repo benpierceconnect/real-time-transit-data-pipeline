@@ -1,0 +1,3 @@
+trip_id,start_latitude,start_longitude,start_time,start_sequence,end_latitude,end_longitude,end_time,end_sequence,duration_minutes,point_to_point_km,point_to_point_speed_kmh
+synthetic-trip-07,42.3298,-71.0838,2026-01-01 14:36:00+00:00,1,42.356862,-71.104987,2026-01-01 14:59:00+00:00,16,23.0,3.4766567623304727,9.069539379992538
+synthetic-trip-08,42.3731,-71.1177,2026-01-01 14:42:00+00:00,1,42.338821,-71.090863,2026-01-01 15:10:30+00:00,20,28.5,4.4035936924174734,9.270723562984156

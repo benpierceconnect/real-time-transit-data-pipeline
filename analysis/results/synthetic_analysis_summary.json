@@ -1,0 +1,12 @@
+{
+  "observation_count": 186,
+  "trip_count": 8,
+  "vehicle_count": 4,
+  "earliest_timestamp": "2026-01-01T14:00:00+00:00",
+  "latest_timestamp": "2026-01-01T15:10:30+00:00",
+  "duration_hours": 1.175,
+  "complete_trip_count": 6,
+  "incomplete_trip_count": 2,
+  "mean_complete_duration_minutes": 36.13,
+  "mean_complete_point_to_point_speed_kmh": 9.25
+}
