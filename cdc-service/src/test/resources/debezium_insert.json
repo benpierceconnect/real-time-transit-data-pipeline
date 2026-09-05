@@ -1,0 +1,23 @@
+{
+  "before": null,
+  "after": {
+    "observation_id": 42,
+    "vehicle_id": "demo-vehicle-01",
+    "latitude": 42.36,
+    "longitude": -71.10,
+    "route_id": "1",
+    "trip_id": "demo-trip-01",
+    "direction_id": 1,
+    "stop_sequence": 12,
+    "occupancy_status": "MANY_SEATS_AVAILABLE",
+    "bearing_degrees": 135.0,
+    "speed_mps": null,
+    "observed_at": 1762388068000
+  },
+  "source": {
+    "db": "transit_demo",
+    "table": "vehicle_observations"
+  },
+  "op": "c",
+  "ts_ms": 1762388069000
+}
