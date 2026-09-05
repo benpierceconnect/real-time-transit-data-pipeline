@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python -m pip install --upgrade pip
+      - run: pip install -r requirements-dev.txt -r collector/requirements.txt -r web/requirements.txt
+      - run: python scripts/generate_synthetic_data.py --check
+      - run: python scripts/secret_scan.py --public-files
+      - run: python scripts/validate_project.py
+      - run: python scripts/write_manifest.py --verify
+      - run: pytest -q
+
+  java:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cdc-service
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - run: mvn -B -ntp test
+
+  compose-config:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cp .env.example .env
+      - run: docker compose --env-file .env config --quiet
