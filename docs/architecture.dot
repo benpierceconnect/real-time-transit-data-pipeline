@@ -1,0 +1,22 @@
+digraph TransitPipeline {
+  rankdir=TB;
+  newrank=true;
+  graph [bgcolor="transparent", pad="0.25", nodesep="0.45", ranksep="0.65"];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=13, color="#285878", fillcolor="#eef6fb", margin="0.18,0.10"];
+  edge [color="#347aa8", penwidth=1.8, arrowsize=0.8, fontname="Arial", fontsize=10];
+
+  source [label="Synthetic snapshot\nor optional MBTA V3 API"];
+  collector [label="Python collector"];
+  mysql [label="MySQL\nvehicle_observations"];
+  cdc [label="Embedded Debezium\nCDC service"];
+  mongo [label="MongoDB\nevents, history, current state"];
+  api [label="Flask API"];
+  map [label="Leaflet map\nand metrics"];
+
+  { rank=same; source; collector; mysql; cdc; }
+  { rank=same; mongo; api; map; }
+
+  source -> collector -> mysql -> cdc;
+  cdc -> mongo;
+  mongo -> api -> map;
+}
