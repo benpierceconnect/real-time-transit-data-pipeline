@@ -1,0 +1,204 @@
+{
+  "data": [
+    {
+      "type": "vehicle",
+      "id": "demo-vehicle-01",
+      "attributes": {
+        "bearing": 45.0,
+        "current_stop_sequence": 2,
+        "direction_id": 0,
+        "latitude": 42.335212,
+        "longitude": -71.088037,
+        "occupancy_status": "MANY_SEATS_AVAILABLE",
+        "speed": 4.5,
+        "updated_at": "2026-01-01T12:00:00Z"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "1",
+            "type": "route"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "demo-trip-01",
+            "type": "trip"
+          }
+        }
+      }
+    },
+    {
+      "type": "vehicle",
+      "id": "demo-vehicle-02",
+      "attributes": {
+        "bearing": 80.0,
+        "current_stop_sequence": 5,
+        "direction_id": 1,
+        "latitude": 42.362275,
+        "longitude": -71.109225,
+        "occupancy_status": "FEW_SEATS_AVAILABLE",
+        "speed": 4.85,
+        "updated_at": "2026-01-01T12:00:05Z"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "1",
+            "type": "route"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "demo-trip-02",
+            "type": "trip"
+          }
+        }
+      }
+    },
+    {
+      "type": "vehicle",
+      "id": "demo-vehicle-03",
+      "attributes": {
+        "bearing": 115.0,
+        "current_stop_sequence": 8,
+        "direction_id": 0,
+        "latitude": 42.346038,
+        "longitude": -71.096513,
+        "occupancy_status": "STANDING_ROOM_ONLY",
+        "speed": 5.2,
+        "updated_at": "2026-01-01T12:00:10Z"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "1",
+            "type": "route"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "demo-trip-03",
+            "type": "trip"
+          }
+        }
+      }
+    },
+    {
+      "type": "vehicle",
+      "id": "demo-vehicle-04",
+      "attributes": {
+        "bearing": 150.0,
+        "current_stop_sequence": 11,
+        "direction_id": 1,
+        "latitude": 42.35145,
+        "longitude": -71.10075,
+        "occupancy_status": "MANY_SEATS_AVAILABLE",
+        "speed": 5.55,
+        "updated_at": "2026-01-01T12:00:15Z"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "1",
+            "type": "route"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "demo-trip-04",
+            "type": "trip"
+          }
+        }
+      }
+    },
+    {
+      "type": "vehicle",
+      "id": "demo-vehicle-05",
+      "attributes": {
+        "bearing": 185.0,
+        "current_stop_sequence": 14,
+        "direction_id": 0,
+        "latitude": 42.356862,
+        "longitude": -71.104987,
+        "occupancy_status": "FEW_SEATS_AVAILABLE",
+        "speed": 5.9,
+        "updated_at": "2026-01-01T12:00:20Z"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "1",
+            "type": "route"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "demo-trip-05",
+            "type": "trip"
+          }
+        }
+      }
+    },
+    {
+      "type": "vehicle",
+      "id": "demo-vehicle-06",
+      "attributes": {
+        "bearing": 220.0,
+        "current_stop_sequence": 17,
+        "direction_id": 1,
+        "latitude": 42.340625,
+        "longitude": -71.092275,
+        "occupancy_status": "STANDING_ROOM_ONLY",
+        "speed": 6.25,
+        "updated_at": "2026-01-01T12:00:25Z"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "1",
+            "type": "route"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "demo-trip-06",
+            "type": "trip"
+          }
+        }
+      }
+    },
+    {
+      "type": "vehicle",
+      "id": "demo-vehicle-07",
+      "attributes": {
+        "bearing": 255.0,
+        "current_stop_sequence": 20,
+        "direction_id": 0,
+        "latitude": 42.367688,
+        "longitude": -71.113462,
+        "occupancy_status": "MANY_SEATS_AVAILABLE",
+        "speed": 6.6,
+        "updated_at": "2026-01-01T12:00:30Z"
+      },
+      "relationships": {
+        "route": {
+          "data": {
+            "id": "1",
+            "type": "route"
+          }
+        },
+        "trip": {
+          "data": {
+            "id": "demo-trip-07",
+            "type": "trip"
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "synthetic": true,
+    "record_count": 7
+  }
+}
